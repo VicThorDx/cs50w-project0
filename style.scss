@@ -15,7 +15,6 @@ $bodycolor: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
     position: relative;
     overflow: hidden;
     background-attachment: fixed;
-
 }
 
 .text_landing{
@@ -37,6 +36,10 @@ $bodycolor: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 .text_landing button:hover{
     background-image: $bodycolor;
 }
+
+.text_landing button:active{
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
  html
  {
     scroll-behavior: smooth;
@@ -49,6 +52,7 @@ body{
     margin-top: 20px;
     background-image: $cardscolor;
     margin-block-end: 20px;
+
 }
 
 .card:hover{
@@ -59,7 +63,6 @@ body{
 .row{
     margin-top: 20px;
     background-image: $cardscontainer;
-    
     border-radius: 8px;
 
 }
@@ -80,3 +83,4 @@ h1.texto{
         }
         
         }
+
