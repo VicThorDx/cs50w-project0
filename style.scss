@@ -1,5 +1,5 @@
 $psize: 25px;
-$cardscontainer: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+$cardscontainer: linear-gradient(to right, #43e97b 0%, #0c5336 100%);
 $cardscolor: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 $bodycolor: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 
@@ -120,6 +120,21 @@ h1.texto::after{
 .container #accordion .card{
 
     @extend %card;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);    
     margin-top: 10px;
+}
+
+iframe{
+    margin-top: 10px;
+
+}
+
+footer{
+    background-image: linear-gradient(to right, #137952 0%, black 100%);
+}
+
+.container #tweet{
+
+    height: 50px;
+    width: 5px;
 }
