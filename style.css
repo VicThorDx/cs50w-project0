@@ -35,6 +35,10 @@
   background-image: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 }
 
+#buttonclass:hover {
+  color: #84a0b8;
+}
+
 .text_landing button:active {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
