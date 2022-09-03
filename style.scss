@@ -4,7 +4,7 @@ $cardscolor: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 $bodycolor: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 
 %landing{
-    background-image: linear-gradient(to right, rgba(75, 14, 9, 0.63) 0%, rgba(9, 41, 23, 0.63) 0%, rgba(87, 14, 14, 0.63) 0%, rgba(95, 10, 3, 0.63) 33%, rgba(66, 16, 12, 0.63) 66%, rgba(31, 14, 11, 0.623) 100%), url("/images/fondo.jpg" );
+    background-image: linear-gradient(to right, rgba(75, 14, 9, 0.63) 0%, rgba(9, 41, 23, 0.63) 0%, rgba(87, 14, 14, 0.63) 0%, rgba(95, 10, 3, 0.63) 33%, rgba(66, 16, 12, 0.63) 66%, rgba(31, 14, 11, 0.623) 100%), url("images/fondo.jpg" );
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ h1.texto::after{
 
 
 .desc{
-    background-image: linear-gradient(to right, rgba(202, 121, 45, 0.63) 0%, rgba(241, 181, 15, 0.63) 0%, rgba(201, 129, 21, 0.63) 0%, rgba(188, 218, 22, 0.63) 33%, rgba(238, 236, 96, 0.63) 66%, rgba(233, 220, 36, 0.623) 100%), url("/images/fondo2.jpg" );
+    background-image: linear-gradient(to right, rgba(202, 121, 45, 0.63) 0%, rgba(241, 181, 15, 0.63) 0%, rgba(201, 129, 21, 0.63) 0%, rgba(188, 218, 22, 0.63) 33%, rgba(238, 236, 96, 0.63) 66%, rgba(233, 220, 36, 0.623) 100%), url("images/fondo2.jpg" );
     background-repeat: "no-repeat";
     background-size: 100% 100%;
 }
