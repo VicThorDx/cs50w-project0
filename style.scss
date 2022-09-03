@@ -103,7 +103,6 @@ h1.texto::after{
         }
 
 
-
 .desc{
     background-image: linear-gradient(to right, rgba(202, 121, 45, 0.63) 0%, rgba(241, 181, 15, 0.63) 0%, rgba(201, 129, 21, 0.63) 0%, rgba(188, 218, 22, 0.63) 33%, rgba(238, 236, 96, 0.63) 66%, rgba(233, 220, 36, 0.623) 100%), url("/images/fondo2.jpg" );
     background-repeat: "no-repeat";
@@ -125,16 +124,21 @@ h1.texto::after{
 }
 
 iframe{
-    margin-top: 10px;
-
+    margin-block-start: 10px;
+    
 }
 
 footer{
     background-image: linear-gradient(to right, #137952 0%, black 100%);
+    margin-top: 10px;
 }
 
-.container #tweet{
-
-    height: 50px;
-    width: 5px;
+.container .row .col-md-6{
+    margin-block-end: 10px
 }
+
+.col-md-4 div{
+    margin-block-end: 10px;
+}
+
+

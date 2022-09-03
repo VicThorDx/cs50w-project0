@@ -1,5 +1,4 @@
 .landing {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(75, 14, 9, 0.63)), color-stop(0%, rgba(9, 41, 23, 0.63)), color-stop(0%, rgba(87, 14, 14, 0.63)), color-stop(33%, rgba(95, 10, 3, 0.63)), color-stop(66%, rgba(66, 16, 12, 0.63)), to(rgba(31, 14, 11, 0.623))), url("/images/fondo.jpg");
   background-image: linear-gradient(to right, rgba(75, 14, 9, 0.63) 0%, rgba(9, 41, 23, 0.63) 0%, rgba(87, 14, 14, 0.63) 0%, rgba(95, 10, 3, 0.63) 33%, rgba(66, 16, 12, 0.63) 66%, rgba(31, 14, 11, 0.623) 100%), url("/images/fondo.jpg");
   height: 500px;
   background-position: center;
@@ -10,13 +9,12 @@
   background-attachment: fixed;
 }
 
-.text_landing button, #buttonclass {
-  background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#0c5336));
+#buttonclass, .text_landing button {
   background-image: linear-gradient(to right, #43e97b 0%, #0c5336 100%);
   border-radius: 10px;
 }
 
-.card, .container #accordion .card {
+.container #accordion .card, .card {
   margin-top: 20px;
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
   -webkit-margin-after: 20px;
@@ -24,31 +22,20 @@
 }
 
 .text_landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 90px;
   font-family: "Raleway", sans-serif;
 }
 
 .text_landing button:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(#12836a));
-  background-image: linear-gradient(to right, #434343 0%, #12836a 100%);
+  background-image: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 }
 
 .text_landing button:active {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f83600), to(#f9d423));
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
@@ -57,26 +44,22 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(#12836a));
-  background-image: linear-gradient(to right, #434343 0%, #12836a 100%);
+  background-image: linear-gradient(to right, #434343 0%, rgb(18, 131, 106) 100%);
 }
 
 .row .card:hover {
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(-3%);
-          transform: translateY(-3%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3%);
 }
 
 .row {
   margin-top: 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#0c5336));
   background-image: linear-gradient(to right, #43e97b 0%, #0c5336 100%);
   border-radius: 8px;
 }
 
 h1.texto {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   color: #e4efe9;
 }
@@ -88,7 +71,7 @@ h1.texto::after {
   height: 100%;
   border-radius: 3px;
   margin-right: -100%;
-  border-bottom: 3px solid #18a56a;
+  border-bottom: 3px solid rgb(24, 165, 106);
 }
 
 @media screen and (min-width: 1000px) {
@@ -96,9 +79,7 @@ h1.texto::after {
     font-size: 23px;
   }
 }
-
 .desc {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(202, 121, 45, 0.63)), color-stop(0%, rgba(241, 181, 15, 0.63)), color-stop(0%, rgba(201, 129, 21, 0.63)), color-stop(33%, rgba(188, 218, 22, 0.63)), color-stop(66%, rgba(238, 236, 96, 0.63)), to(rgba(233, 220, 36, 0.623))), url("/images/fondo2.jpg");
   background-image: linear-gradient(to right, rgba(202, 121, 45, 0.63) 0%, rgba(241, 181, 15, 0.63) 0%, rgba(201, 129, 21, 0.63) 0%, rgba(188, 218, 22, 0.63) 33%, rgba(238, 236, 96, 0.63) 66%, rgba(233, 220, 36, 0.623) 100%), url("/images/fondo2.jpg");
   background-repeat: "no-repeat";
   background-size: 100% 100%;
@@ -115,16 +96,21 @@ h1.texto::after {
 }
 
 iframe {
-  margin-top: 10px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
 }
 
 footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#137952), to(black));
   background-image: linear-gradient(to right, #137952 0%, black 100%);
+  margin-top: 10px;
 }
 
-.container #tweet {
-  height: 50px;
-  width: 5px;
+.container .row .col-md-6 {
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.col-md-4 div {
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}/*# sourceMappingURL=style.css.map */
